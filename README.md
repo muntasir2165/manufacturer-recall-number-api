@@ -9,8 +9,11 @@ An API to update vehicle data with manufacturer recall number and fetch the upda
 ## Available Endpoints
 
 - POST at /api/recalls - saves the provided vehicle recall data into a MongoDB database instance along with the manufacturer recall number data from the [Vehicle Recall Database API](https://open.canada.ca/data/en/dataset/1ec92326-47ef-4110-b7ca-959fab03f96d)
-  Note: Please provide vehicle recall data in JSON format in the request body (for example: CSCompVehicleRecallStart.json in the root of the project repo)
+
+Note: Please provide vehicle recall data in JSON format in the request body (for example: CSCompVehicleRecallStart.json in the root of the project repo)
+
 - GET at /api/recalls - fetches the previously saved vehicle recall data from the MongoDB database instance
+
 - GET at /api/recalls/<manufacturerRecallNumber> - fetches vehicle recall data for the provided manufacturer recall number
 
 ## Environment Setup
