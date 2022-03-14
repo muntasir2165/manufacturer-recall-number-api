@@ -2,10 +2,6 @@
 
 An API to update vehicle data with manufacturer recall number and fetch the updated data
 
-## App Link
-
-[Manufacturer Recall Number API](TBD)
-
 ## Available Endpoints
 
 - POST at /api/recalls - saves the provided vehicle recall data into a MongoDB database instance along with the manufacturer recall number data from the [Vehicle Recall Database API](https://open.canada.ca/data/en/dataset/1ec92326-47ef-4110-b7ca-959fab03f96d)
