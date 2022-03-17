@@ -32,7 +32,7 @@ mongoose
   .connect(process.env.MONGODB, { useNewUrlParser: true })
   .then(() => {
     console.log("Connected to mongodb");
-    return app.listen(3300);
+    return app.listen(process.env.PORT || 3300);
   })
   .then(() => console.log("Server running at 3300"))
   .catch((error) => console.log(error.message));
